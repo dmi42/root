@@ -7,35 +7,47 @@ Most Recent Version:
 <html lang=en>
     <head>
         <title>Home Page</title>
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Cormorant|Gentium+Basic|Josefin+Slab|Oranienbaum" rel="stylesheet">
+       
+        
+        <style>
+            section {
+                background-color: #ffefe6;
+                padding: 30px;
+            }
+        </style>
     </head>
     
     <body>
         <header>
-            <h1>Harbor's Grill and Diner</h1>
+            <h1>DP Diner</h1>
         </header>
         
         <nav>
             <hr />
-            <p><a href="index.html">Home</a></p>
-            <p><a href="menu.html">Menu</a></p>
-            <p><a href="contact.html">Contact Us</a></p>
+            <a class="btn badge-pill" href="index.html">Home</a>
+            <a class="btn badge-pill" href="menu.html">Menu</a>
+            <a class="btn badge-pill" href="contact.html">Contact Us</a>
             <hr />
         </nav>
         
         <section style="text-align: center;">
             <article id="restaurant-desc">
 
-                <div style="text-align: center;"><img src="images/harbor-view.JPG" width="400"></div>
+                <p><img src="images/harbor-view.JPG"></p>
                 <br />
                 <p><strong>Restaurant Description</strong></p>
-                <p>Whether driving along Highway 1, or sunsetting at D's Harbor, West Coast's iconic, Harbor's Grill and Diner, serves up the taste of joy in every burger, sandwich and fry. This classic diner has been proudly serving locals and distant travelers, alike, for the past 20 years! </p>
+                <p>Whether driving along Highway 1, or sunsetting on the Harbor, Dana Point's iconic, DP Diner, serves up the taste of joy in every burger, sandwich and fry. This classic diner has been proudly serving locals and distant travelers, alike, for the past 20 years! </p>
             </article>
         </section>
         
         <footer>
             <hr />
-            <p>52717 Dee Harbor Dr, West Coast, CA 92629</p>
+            <p>52717 Harbor Dr, Dana Point, CA 92629</p>
             <p>555-507-9500</p>
         </footer>   
     </body>

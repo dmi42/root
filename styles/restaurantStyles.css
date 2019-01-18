@@ -3,6 +3,35 @@ Name: Darla Innes
 Date Created: 01/15/19
 Most Recent Version:
 */
+
 header, footer{
     text-align: center;
+       color:#ff3300;
 }
+body {
+    font-family: 'Gentium Basic', serif;
+    color: #293d3d;
+}
+h1 {
+     font-family: 'Cormorant', serif;
+}
+nav {
+    background-color: #293d3d;
+}
+nav .btn {
+    background-color: #ffffff;
+    color: #ff3300;
+    
+}
+nav .btn:visited {
+    color: #7e8a8a;
+}
+nav .btn:hover {
+    font-weight: bold;
+}
+
+nav .btn:active {
+    text-decoration: none;
+}
+
+    
