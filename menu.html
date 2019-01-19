@@ -6,6 +6,9 @@ Most Recent Revision:
 -->
 <html lang=en>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+        
         <title>Menu</title>
         <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
         
@@ -23,10 +26,12 @@ Most Recent Revision:
                 margin: 50px; 
             }
             table {
-                width: 70%;
+                width: 100%;
                 margin: auto;
                 border: thick #ffffff solid;
+         
                 text-align: center;
+               
             }
           td {
                 padding: 2px;
@@ -34,7 +39,7 @@ Most Recent Revision:
 
             .bold {
                 font-weight: bold;
-                font-size: 1.3em;
+                font-size: 1.2em;
             }
 
             
@@ -43,6 +48,7 @@ Most Recent Revision:
     </head>
     
     <body>
+        <div class="container">
         <header>
             <h1>DP Diner</h1>
         </header>
@@ -138,7 +144,7 @@ Most Recent Revision:
                     </tfoot>
             </table>
             </article>
-
+ 
            <article> 
                <table>
                    <thead>
@@ -146,12 +152,13 @@ Most Recent Revision:
                            <th class="bold" colspan="2">
                                Beverages
                            </th>
+                          
                        </tr>
                    </thead> 
                    <tbody>
                        <tr>
                            <td>Root Beer</td>
-                           <td>$3.00</td>
+                           <td>$3.00</td>  
                        </tr>
                        <tr>
                            <td>Bottled Water</td>
@@ -165,17 +172,22 @@ Most Recent Revision:
                            <td>Iced Tea</td>
                            <td>$1.25</td>
                        </tr>
-                   </tbody>
                    <tfoot>
-                       <td colspan="2"></td>
+                       <td colspan="2"> </td>
                    </tfoot>
                </table>
             </article>
+            
         </section>
         
         <footer>
             <p>52717 Harbor Dr, Dana Point, CA 92629</p>
             <p>555-507-9500</p>
         </footer>
+        </div>
+                <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
