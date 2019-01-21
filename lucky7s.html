@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+    <title>Lucky Sevens</title>
+    <style>
+        .lgText {
+            font-size: 3em;
+        }
+    
+    </style>
+</head>
+    <center>
+<body>
+<div class="lgText">Lucky Sevens</div>
+    <div style="margin: 20px 20px">
+        Starting Bet: <input type="text" id="inputBet" name="startBet" placeholder="$0" />
+        <button onclick="playButton();">Play</button>
+    </div>
+    
+    
+    
+    <div id="results" style="display:none;">
+        <div style="font-size: 2em;">Results</div>
+        <div style="margin: 10px 10px">
+            <table>
+                <tr>
+                    <td>Starting Bet: </td>
+                    <td>$<span id="dollarAmt"></span>.00</td>
+                </tr>
+
+                <tr>
+                    <td>Total Rolls Before Going Broke</td>
+                    <td><span id="totalRolls"></span></td>
+                </tr>
+                <tr>
+                    <td>Highest Amount Won</td>
+                    <td><span id="highAmtWon"></span></td>
+                </tr>
+                <tr>
+                    <td>Roll Count at Highest Amount Won</td>
+                    <td><span id="highAmtRollCt"></span></td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+        <script type="text/javascript">
+             
+   
+            function playButton() {
+                var inputBet = document.getElementById("inputBet").value;
+                var finalRollCt = 0;
+                var die1 = 0;
+                var die2 = 0;	
+                var diceSum = 0;
+                var rollCt=0;
+                var totalDollars = inputBet;
+                var yay = totalDollars +4;
+                var shoot = totalDollars -1;
+                document.getElementById("dollarAmt").innerText = document.getElementById("inputBet").value;
+                document.getElementById("totalRolls").innerHTML = document.getElementById("finalRollCt")
+                document.getElementById("highAmtWon").innerHTML = document.getElementById("finalHighAmt"); document.getElementById("highAmtRollCt").innerHTML = document.getElementById("finalHighCt"); 
+                console.log(inputBet);
+                document.getElementById("results").style.display = "block";
+                     
+                 do{
+                     
+                     die1 = Math.floor(Math.random() * 6) + 1;
+                     die2 = Math.floor(Math.random() * 6) + 1;
+                     diceSum = die1 + die2;  
+                     
+                     if (diceSum==7){
+                         totalDollars +=yay;
+                     }
+                     else {totalDollars -= shoot;
+                           rollCt++; 
+                          }
+            } while (totalDollars>0);
+            }
+     
+            /*
+            
+           
+      
+                var rollCt = dicecount();
+            var highAmt = winnings();
+            var highCt = rolling();
+*/
+    </script>
+</body></center>
+</html>
